@@ -7,7 +7,7 @@
     "react-dom": "^16.3.1",
     "react-scripts": "1.1.4",
     "zygote-cart": "^2.0.0",
-    "zygote-cart-v2": "^2.0.10"
+    "zygote-cart-v2": "^2.0.11"
   },
   "scripts": {
     "start": "react-scripts start",
