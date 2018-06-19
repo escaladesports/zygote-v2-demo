@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import zygote from 'zygote-cart-v2'
 import './App.css'
+import logo from './logo.png'
 
 class App extends Component {
   constructor(props) {
@@ -14,6 +15,7 @@ class App extends Component {
 
   componentDidMount() {
     zygote.site('goalrilla')
+    zygote.closeCart()
   }
 
   componentWillReceiveProps(nextProps) {
@@ -149,7 +151,8 @@ class App extends Component {
         />
         <zygote.ZygoteContainer
           googleApiKey={'AIzaSyD2pAEWs2VMApgeuoNhy3dJoPWDvMOm49Y'}
-          // brandLogo={brandLogo}
+          brandLogo={logo}
+          ccPhone={'+1 (812)-2222-1111'}
           // addToCartMessage={'Custom Add To Cart MeSsAgE'}
           // cartHeader={'Here is your cart header'}
           // footerMessage={'Here is from me'}
