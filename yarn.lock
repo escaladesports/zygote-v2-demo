@@ -7607,9 +7607,9 @@ yargs@~3.10.0:
     decamelize "^1.0.0"
     window-size "0.1.0"
 
-zygote-cart-v2@^2.0.15:
-  version "2.0.15"
-  resolved "https://registry.yarnpkg.com/zygote-cart-v2/-/zygote-cart-v2-2.0.15.tgz#ea73ae42105f72e50ef9a0bb23e34b4d11b9dc0b"
+zygote-cart-v2@^2.0.16:
+  version "2.0.16"
+  resolved "https://registry.yarnpkg.com/zygote-cart-v2/-/zygote-cart-v2-2.0.16.tgz#df989306b948168bf8108366e3b8f43c8449f95d"
   dependencies:
     axios "^0.18.0"
     better-react-spinkit "^2.0.4"
