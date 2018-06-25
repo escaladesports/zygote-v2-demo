@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import zygote from 'zygote-cart-v2'
+import zygote, { AddToCart } from 'zygote-cart-v2'
 import './App.css'
 import logo from './logo.png'
 
@@ -44,35 +44,31 @@ class App extends Component {
   render() {
     return (
       <div>
-        <button
-          style={{
-            display: 'block',
-            border: 'none',
-            padding: '20px',
-            background: 'blue',
-            color: 'white',
-            fontSize: '20px',
-            margin: '10px',
-            cursor: 'pointer'
-          }}
-          onClick={() => this.setState({ show: !this.state.show })}
+        <AddToCart
+          price={12.33}
+          desc="Here is the description!!"
+          id={`B1002`}
+          image={'https://pingpong.com/img/product/t1265-0-s.jpg?1496431075'}
+          name={`Item`}
+          url={'https://goalrilla.com/'}
+          open
         >
-          Toggle Div
-        </button>
+          <button
+            style={{
+              display: 'block',
+              border: 'none',
+              padding: '20px',
+              background: 'orange',
+              color: 'white',
+              fontSize: '20px',
+              margin: '10px',
+              cursor: 'pointer'
+            }}
+          >
+            Add to Cart
+          </button>
+        </AddToCart>
 
-        {this.state.shouldRender ? (
-          <div className={`baseDiv ${this.state.class}`} />
-        ) : null}
-
-        <div
-          className={`secondDiv ${this.state.class}`}
-          style={{
-            width: '200px',
-            height: '200px',
-            background: '#999',
-            margin: '5px'
-          }}
-        />
         <button
           style={{
             display: 'block',
